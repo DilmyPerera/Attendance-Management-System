@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Attendance_Management_System
 {
-    public partial class Form4InsertStudentDetails : Form
+    public partial class Form5ShowAttendance : Form
     {
-        public Form4InsertStudentDetails()
+        public Form5ShowAttendance()
         {
             InitializeComponent();
         }
-
-       
     }
 }

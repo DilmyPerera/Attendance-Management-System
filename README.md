@@ -1,0 +1,2 @@
+Username = Teacher
+Password = Iamateacher

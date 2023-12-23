@@ -27,17 +27,25 @@ namespace Attendance_Management_System
 
         private void button2_Reset_Click(object sender, EventArgs e)
         {
-
+            textBox1_Username.Clear();
+            textBox2Password.Clear();
         }
 
         private void button2_Login_Click(object sender, EventArgs e)
         {
-
+            if(textBox1_Username.Text=="Teacher" && textBox2Password.Text == "Iamateacher")
+            {
+                Form2AttendanceSystem form2 = new Form2AttendanceSystem();
+                form2.Show();
+                this.Hide();
+            }
         }
 
         private void textBox1_Username_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

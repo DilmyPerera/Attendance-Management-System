@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox2Password = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox1_Username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,6 +48,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Reset_Click);
             // 
             // button1
             // 
@@ -59,16 +60,17 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button2_Login_Click);
             // 
-            // textBox2
+            // textBox2Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(260, 257);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(308, 41);
-            this.textBox2.TabIndex = 10;
+            this.textBox2Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2Password.Location = new System.Drawing.Point(260, 257);
+            this.textBox2Password.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2Password.Name = "textBox2Password";
+            this.textBox2Password.PasswordChar = '*';
+            this.textBox2Password.Size = new System.Drawing.Size(308, 41);
+            this.textBox2Password.TabIndex = 10;
             // 
             // label3
             // 
@@ -96,14 +98,14 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Username :";
             // 
-            // textBox1
+            // textBox1_Username
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(260, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 41);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Username_Click);
+            this.textBox1_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1_Username.Location = new System.Drawing.Point(260, 151);
+            this.textBox1_Username.Name = "textBox1_Username";
+            this.textBox1_Username.Size = new System.Drawing.Size(313, 41);
+            this.textBox1_Username.TabIndex = 13;
+            this.textBox1_Username.Click += new System.EventHandler(this.textBox1_Username_Click);
             // 
             // label1
             // 
@@ -127,10 +129,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(845, 509);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox1_Username);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox2Password);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
@@ -145,10 +147,10 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox2Password;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox1_Username;
         private System.Windows.Forms.Label label1;
     }
 }

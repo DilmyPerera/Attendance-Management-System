@@ -102,6 +102,7 @@
             this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
             this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(136, 29);
             this.attendanceToolStripMenuItem.Text = "Attendance";
+            this.attendanceToolStripMenuItem.Click += new System.EventHandler(this.attendanceToolStripMenuItem_Click);
             // 
             // showAttendanceToolStripMenuItem
             // 
@@ -111,6 +112,7 @@
             this.showAttendanceToolStripMenuItem.Name = "showAttendanceToolStripMenuItem";
             this.showAttendanceToolStripMenuItem.Size = new System.Drawing.Size(196, 29);
             this.showAttendanceToolStripMenuItem.Text = "Show Attendance";
+            this.showAttendanceToolStripMenuItem.Click += new System.EventHandler(this.showAttendanceToolStripMenuItem_Click);
             // 
             // Form2AttendanceSystem
             // 

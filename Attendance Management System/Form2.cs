@@ -19,7 +19,23 @@ namespace Attendance_Management_System
 
         private void newStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form4InsertStudentDetails form4 = new Form4InsertStudentDetails();
+            form4.Show();
+            this.Hide();
+        }
 
+        private void attendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();    
+        }
+
+        private void showAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5ShowAttendance form5 = new Form5ShowAttendance();
+            form5.Show(); 
+            this.Hide();  
         }
     }
 }

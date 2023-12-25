@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Attendance_Management_System;
 
 namespace Attendance_managementsystem
 {
-    public partial class AddStudent : Form
+    public partial class Form4AddStudent : Form
     {
-        public AddStudent()
+        public Form4AddStudent()
         {
             InitializeComponent();
         }
@@ -51,6 +52,13 @@ namespace Attendance_managementsystem
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2AttendanceSystem form2 = new Form2AttendanceSystem();
+            form2.Show();
+            this.Hide();
         }
     }
 }

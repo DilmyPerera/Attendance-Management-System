@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Attendance_Management_System;
 
 namespace Attendance_managementsystem
 {
@@ -19,8 +20,7 @@ namespace Attendance_managementsystem
 
         private void ShowAttendance_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'attendanceDataSet.SecondYear' table. You can move, or remove it, as needed.
-            this.secondYearTableAdapter.Fill(this.attendanceDataSet.SecondYear);
+            
 
         }
 
@@ -44,6 +44,13 @@ namespace Attendance_managementsystem
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2AttendanceSystem form2 = new Form2AttendanceSystem();
+            form2.Show();
+            this.Hide();
         }
     }
 }

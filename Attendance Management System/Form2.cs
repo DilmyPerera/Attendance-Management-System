@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Attendance_managementsystem;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace Attendance_Management_System
 
         private void newStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4InsertStudentDetails form4 = new Form4InsertStudentDetails();
+            Form4AddStudent form4 = new Form4AddStudent();
             form4.Show();
             this.Hide();
         }
@@ -33,7 +34,7 @@ namespace Attendance_Management_System
 
         private void showAttendanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5ShowAttendance form5 = new Form5ShowAttendance();
+            ShowAttendance form5 = new ShowAttendance();
             form5.Show(); 
             this.Hide();  
         }

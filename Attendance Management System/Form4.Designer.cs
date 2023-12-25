@@ -1,6 +1,6 @@
-﻿namespace Attendance_Management_System
+﻿namespace Attendance_managementsystem
 {
-    partial class Form4InsertStudentDetails
+    partial class Form4AddStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // button1
@@ -152,12 +153,25 @@
             this.label6.TabIndex = 28;
             this.label6.Text = "Insert Student Details";
             // 
-            // Form4InsertStudentDetails
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(29, 527);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(69, 31);
+            this.linkLabel2.TabIndex = 30;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Back";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // Form4AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(799, 573);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
@@ -168,7 +182,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form4InsertStudentDetails";
+            this.Name = "Form4AddStudent";
             this.Text = "Insert Student details";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -186,5 +200,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

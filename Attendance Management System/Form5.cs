@@ -52,5 +52,16 @@ namespace Attendance_managementsystem
             form2.Show();
             this.Hide();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowAttendance_Load_1(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Lenovo\source\repos\Attendance-Management-System\Attendance Management System\Attendance.mdf"";Integrated Security=True");
+            con.Open();
+        }
     }
 }

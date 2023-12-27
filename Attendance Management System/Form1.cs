@@ -39,6 +39,10 @@ namespace Attendance_Management_System
                 form2.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
         }
 
         private void textBox1_Username_Click(object sender, EventArgs e)
